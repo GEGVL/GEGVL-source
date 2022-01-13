@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import KnowledgeCard
+from .models import *
 
-admin.site.register(KnowledgeCard)
+admin.site.register(KnowledgeCard, KnowledgeCardAdmin)
+admin.site.register(Video)
