@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./components.scss";
 import "./FloatingMenuBarButton.scss";
 import Icon from "@mdi/react";
-import * as Constants from "../constants.js";
+import * as constants from "../constants.js";
 import { Tooltip } from "bootstrap";
-import variables from "./components.scss";
+import sassVars from "./components.scss";
 
 /**
  * A button to go inside a floating menu bar component
@@ -40,8 +40,8 @@ export default class FloatingMenuBarButton extends Component {
                 aria-label={this.props.enabled ? this.props.tooltip : ""}>
                 <Icon
                     path={this.props.icon}
-                    color={this.props.enabled ? variables.TEXT_PRIMARY_COLOR : variables.TEXT_SECONDARY_COLOR}
-                    size={Constants.FLOATING_MENU_BAR_BUTTON_ICON_SIZE} />
+                    color={sassVars.TEXT_PRIMARY_COLOR}
+                    size={constants.FLOATING_MENU_BAR_BUTTON_ICON_SIZE} />
             </button>
         );
     }
