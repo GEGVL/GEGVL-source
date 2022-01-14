@@ -1,0 +1,28 @@
+.logo {
+    width: 60px;
+    height: auto;
+    margin: .5em;
+    vertical-align: top;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.gegvl-text {
+    position: relative;
+    top: .2em;
+    font-weight: bold;
+    font-size: 32pt !important;
+}
+
+.drawer-close-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: .75em;
+    right: 1em;
+}

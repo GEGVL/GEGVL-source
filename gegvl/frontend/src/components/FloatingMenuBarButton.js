@@ -11,7 +11,8 @@ import variables from "./components.scss";
  * A button to go inside a floating menu bar component
  * @prop {string} icon MDI icon
  * @prop {string} tooltip Tooltip shown on button hover
- * @prop {function} callback Function run when button clicked
+ * @prop {string} controls ID of Bootstrap offcanvas component this button controls
+ * @prop {boolean} enabled Controls whether or not this button is clickable
  */
 export default class FloatingMenuBarButton extends Component {
     constructor(props) {
@@ -23,7 +24,7 @@ export default class FloatingMenuBarButton extends Component {
         new Tooltip(this.tooltip.current, {
             title: this.props.tooltip,
             placement: "right",
-            trigger: "hover"
+            trigger: this.props.enabled ? "hover" : ""
         });
     }
 
@@ -32,13 +33,24 @@ export default class FloatingMenuBarButton extends Component {
             <button
                 className="button circle drop-shadow"
                 ref={this.tooltip}
-                onClick={this.props.callback}>
+                data-bs-toggle="offcanvas"
+                href={"#" + this.props.controls}
+                disabled={!this.props.enabled}
+                aria-controls={this.props.enabled ? this.props.controls : "Disabled"}
+                aria-label={this.props.enabled ? this.props.tooltip : ""}>
                 <Icon
                     path={this.props.icon}
-                    color={variables.TEXT_PRIMARY_COLOR}
+                    color={this.props.enabled ? variables.TEXT_PRIMARY_COLOR : variables.TEXT_SECONDARY_COLOR}
                     size={Constants.FLOATING_MENU_BAR_BUTTON_ICON_SIZE} />
             </button>
         );
     }
 
+}
+
+FloatingMenuBarButton.defaultProps = {
+    icon: "",
+    tooltip: "",
+    controls: "",
+    enabled: true,
 }
