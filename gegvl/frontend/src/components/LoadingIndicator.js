@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import variables from "./components.scss";
+import sassVars from "./components.scss";
 import Icon from "@mdi/react";
 import { mdiLoading } from '@mdi/js';
-import * as Constants from "../constants";
+import * as constants from "../constants";
 import "./LoadingIndicator.scss";
 
 /**
@@ -16,8 +16,8 @@ export default class LoadingIndicator extends Component {
                 <Icon
                     className="indicator"
                     path={mdiLoading}
-                    color={variables.TEXT_SECONDARY_COLOR}
-                    size={5} />
+                    color={sassVars.TEXT_SECONDARY_COLOR}
+                    size={constants.LOADING_ICON_SIZE} />
                 <div className="loading-text">
                     {this.props.text}
                 </div>
