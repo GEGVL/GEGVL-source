@@ -1,5 +1,5 @@
 
-Google Earth Based Geoscience Video Library is transforming to Server Based. The Name of the Project will be later change to <h3> EarthStory </h3> (Geoscience Video Library) 
+Google Earth Based Geoscience Video Library is transforming to Server Based. The Name of the Project will be later change to <h3> VideoEarthStory </h3> (Geoscience Video Library) 
 
 <!-- PROJECT LOGO -->
 <br />
