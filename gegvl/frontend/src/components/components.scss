@@ -1,0 +1,25 @@
+$text-primary-color: #3C3C3C;
+$text-secondary-color: #898989;
+
+:export {
+    TEXT_PRIMARY_COLOR: $text-primary-color;
+    TEXT_SECONDARY_COLOR: $text-secondary-color;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.drop-shadow {
+    box-shadow: 3px 4px 9px #00000040;
+}
+
+/* Rounds out edges of rectangular elements to be more pill-shaped */
+.pill {
+    border-radius: 65px;
+}
+
+/* Makes backgrounds look like glass */
+.glass {
+    background-color: #fffffff4;
+}
