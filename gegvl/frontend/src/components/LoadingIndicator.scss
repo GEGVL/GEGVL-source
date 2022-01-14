@@ -1,0 +1,27 @@
+@import "./components";
+
+.loading-container {
+    z-index: 1;
+}
+
+.indicator {
+    transform: rotate(45deg);
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: loading;
+    animation-timing-function: linear;
+}
+
+.loading-text {
+    color: $text-secondary-color;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(45deg);
+    }
+    
+    to {
+        transform: rotate(405deg);
+    }
+}
