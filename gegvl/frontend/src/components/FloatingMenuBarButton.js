@@ -5,11 +5,11 @@ import "./FloatingMenuBarButton.scss";
 import Icon from "@mdi/react";
 import * as constants from "../constants.js";
 import { Tooltip } from "bootstrap";
-import sassVars from "./components.scss";
+import sassVars from "./sassVars.scss";
 
 /**
  * A button to go inside a floating menu bar component
- * @prop {string} icon MDI icon
+ * @prop {string} icon MDI icon to show in button
  * @prop {string} tooltip Tooltip shown on button hover
  * @prop {string} controls ID of Bootstrap offcanvas component this button controls
  * @prop {boolean} enabled Controls whether or not this button is clickable
@@ -40,7 +40,7 @@ export default class FloatingMenuBarButton extends Component {
                 aria-label={this.props.enabled ? this.props.tooltip : ""}>
                 <Icon
                     path={this.props.icon}
-                    color={sassVars.TEXT_PRIMARY_COLOR}
+                    color={this.props.enabled ? sassVars.TEXT_PRIMARY_COLOR : sassVars.TEXT_SECONDARY_COLOR}
                     size={constants.FLOATING_MENU_BAR_BUTTON_ICON_SIZE} />
             </button>
         );

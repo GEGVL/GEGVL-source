@@ -1,0 +1,10 @@
+$text-primary-color: #3C3C3C;
+$text-secondary-color: #898989;
+
+$menu-section-icon-size: .7;
+
+:export {
+    TEXT_PRIMARY_COLOR: $text-primary-color;
+    TEXT_SECONDARY_COLOR: $text-secondary-color;
+    MENU_SECTION_ICON_SIZE: $menu-section-icon-size;
+}

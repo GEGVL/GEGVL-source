@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import sassVars from "./components.scss";
+import sassVars from "./sassVars.scss";
 import Icon from "@mdi/react";
 import { mdiLoading } from '@mdi/js';
 import * as constants from "../constants";

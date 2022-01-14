@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./DrawerMenuHeader.scss";
 import Icon from "@mdi/react";
-import variables from "./components.scss";
+import sassVars from "./sassVars.scss";
 import { mdiClose } from '@mdi/js';
 import * as Constants from "../constants";
 
@@ -22,7 +22,7 @@ export default class DrawerMenuHeader extends Component {
                     aria-label="Close">
                     <Icon
                         path={mdiClose}
-                        color={variables.TEXT_PRIMARY_COLOR}
+                        color={sassVars.TEXT_PRIMARY_COLOR}
                         size={Constants.CLOSE_BUTTON_ICON_SIZE} />
                 </button>
             </div>
