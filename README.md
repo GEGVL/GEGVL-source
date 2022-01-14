@@ -1,5 +1,5 @@
 
-
+Google Earth Based Geoscience Video Library is transforming to Server Based. The Name of the Project will be later change to <h3> EarthStory </h3> (Geoscience Video Library) 
 
 <!-- PROJECT LOGO -->
 <br />
@@ -169,7 +169,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Ning Wang - [@UtdNing](https://twitter.com/UtdNing) - Ning.Wang@utdallas.edu <br/>
-Jack, Katie, Somie <br/>
+Jack (Leader of the CS), Katie (Coordinator and Geoscientist), Somie (Geoscientist and Africa American Expert) <br/>
 Project Link: [https://github.com/Ning-utdgss/GEGVL-source]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
