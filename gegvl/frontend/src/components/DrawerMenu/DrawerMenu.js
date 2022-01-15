@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DrawerMenuHeader from "./DrawerMenuHeader";
-import "./components.scss";
+import "../components.scss";
 import "./DrawerMenu.scss";
+import DrawerMenuFooter from "./DrawerMenuFooter";
 
 /**
  * A generic pullout drawer menu from the left side
@@ -18,6 +19,7 @@ export default class DrawerMenu extends Component {
                 <div className="offcanvas-body">
                     {this.props.children}
                 </div>
+                <DrawerMenuFooter />
             </div>
         );
     }

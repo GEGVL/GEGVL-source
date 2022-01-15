@@ -1,10 +1,20 @@
+// Colors
 $text-primary-color: #3C3C3C;
 $text-secondary-color: #898989;
 
+// Sizes
 $menu-section-icon-size: .7;
+$floating-menu-button-icon-size: 1;
+$close-button-icon-size: 1.3;
+$loading-icon-size: 5;
+$social-icon-size: 1;
 
 :export {
     TEXT_PRIMARY_COLOR: $text-primary-color;
     TEXT_SECONDARY_COLOR: $text-secondary-color;
     MENU_SECTION_ICON_SIZE: $menu-section-icon-size;
+    FLOATING_MENU_BUTTON_ICON_SIZE: $floating-menu-button-icon-size;
+    CLOSE_BUTTON_ICON_SIZE: $close-button-icon-size;
+    LOADING_ICON_SIZE: $loading-icon-size;
+    SOCIAL_ICON_SIZE: $social-icon-size;
 }

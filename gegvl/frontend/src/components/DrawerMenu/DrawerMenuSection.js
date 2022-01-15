@@ -1,7 +1,7 @@
 import Icon from "@mdi/react";
 import React, { Component } from "react";
-import "./components.scss";
-import sassVars from "./sassVars.scss";
+import "../components.scss";
+import sassVars from "../sassVars.scss";
 import "./DrawerMenuSection.scss";
 
 /**
@@ -20,7 +20,7 @@ export default class DrawerMenuSection extends Component {
                         className="section-icon"
                         path={this.props.icon}
                         color={sassVars.TEXT_PRIMARY_COLOR}
-                        size={1 * sassVars.MENU_SECTION_ICON_SIZE} />
+                        size={Number(sassVars.MENU_SECTION_ICON_SIZE)} />
                     <span className="section-title-text">
                         {this.props.title.toUpperCase()}
                     </span>

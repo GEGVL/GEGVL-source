@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import FloatingMenuBar from "./components/FloatingMenuBar";
-import DrawerMenu from "./components/DrawerMenu";
-import FloatingMenuBarButton from "./components/FloatingMenuBarButton";
+import FloatingMenuBar from "./components/FloatingMenuBar/FloatingMenuBar";
+import DrawerMenu from "./components/DrawerMenu/DrawerMenu";
+import FloatingMenuBarButton from "./components/FloatingMenuBar/FloatingMenuBarButton";
 import { mdiMapSearchOutline, mdiDatabaseSearchOutline, mdiHelpCircleOutline, mdiMagnify } from '@mdi/js';
 import Map from "./components/Map";
-import DrawerMenuSection from "./components/DrawerMenuSection";
+import DrawerMenuSection from "./components/DrawerMenu/DrawerMenuSection";
 
 export default class App extends Component {
   render() {

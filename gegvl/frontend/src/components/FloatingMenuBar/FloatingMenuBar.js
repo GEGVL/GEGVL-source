@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./FloatingMenuBar.scss";
-import "./components.scss"
+import "../components.scss"
 
 /**
  * A button to go inside a floating menu bar component

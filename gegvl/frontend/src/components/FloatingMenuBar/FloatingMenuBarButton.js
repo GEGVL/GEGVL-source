@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./components.scss";
+import "../components.scss";
 import "./FloatingMenuBarButton.scss";
 import Icon from "@mdi/react";
-import * as constants from "../constants.js";
 import { Tooltip } from "bootstrap";
-import sassVars from "./sassVars.scss";
+import sassVars from "../sassVars.scss";
 
 /**
  * A button to go inside a floating menu bar component
@@ -41,7 +40,7 @@ export default class FloatingMenuBarButton extends Component {
                 <Icon
                     path={this.props.icon}
                     color={this.props.enabled ? sassVars.TEXT_PRIMARY_COLOR : sassVars.TEXT_SECONDARY_COLOR}
-                    size={constants.FLOATING_MENU_BAR_BUTTON_ICON_SIZE} />
+                    size={Number(sassVars.FLOATING_MENU_BUTTON_ICON_SIZE)} />
             </button>
         );
     }
