@@ -1,10 +1,4 @@
-$text-primary-color: #3C3C3C;
-$text-secondary-color: #898989;
-
-:export {
-    TEXT_PRIMARY_COLOR: $text-primary-color;
-    TEXT_SECONDARY_COLOR: $text-secondary-color;
-}
+@import "./sassVars";
 
 .circle {
     border-radius: 100%;
@@ -22,4 +16,13 @@ $text-secondary-color: #898989;
 /* Makes backgrounds look like glass */
 .glass {
     background-color: #fffffff4;
+}
+
+hr {
+    width: 100%;
+    margin: auto;
+    color: $text-secondary-color !important;
+    height: 1px !important;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }

@@ -8,7 +8,7 @@ import "./LoadingView.scss";
 export default class LoadingView extends Component {
     render() {
         return (
-            <div class="loading-background">
+            <div className="loading-background">
                 <LoadingIndicator text="Loading GEGVL..." />
             </div>
         );
