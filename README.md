@@ -69,11 +69,11 @@ GEGVL includes place- & events- based geoscience educational videos which have b
 
 
 ### Built With
-* [React.js](https://reactjs.org/)
+* [Python](https://reactjs.org/)
 * [Django](https://www.djangoproject.com/)
-* [Sass](https://sass-lang.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [deck.gl](https://deck.gl/)
+* [Javascript](https://sass-lang.com/)
+* [SCSS](https://getbootstrap.com/)
+* [HTML](https://deck.gl/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
